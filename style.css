@@ -19,6 +19,7 @@ body {
 .component-image {
     background-image: linear-gradient(0deg, hsl(277, 64%, 61%), hsl(277, 64%, 61%)), url("images/image-header-desktop.jpg");
     background-size:cover;
+    background-repeat: no-repeat;
     background-blend-mode: multiply;
     height: inherit;
     width: 50%;
@@ -86,7 +87,7 @@ body {
 
 @media only screen and (max-width: 376px) {
     .container {
-        margin-top: 10%;
+        margin-top: 40vh;
     }
     .component-card {
         flex-direction: column-reverse;
@@ -94,9 +95,26 @@ body {
 
     .component-image {
         height: 200px;
-        background-size: contain;
+        background-image: linear-gradient(0deg, hsl(277, 64%, 61%), hsl(277, 64%, 61%)), url("images/image-header-mobile.jpg");
+        background-size: cover;
+        width: 100%;
+        border-radius: 10px 10px  0 0;
+    }
+
+    .component-text {
+        width: 90%;
+        text-align: center;
+    }
+
+    .component-text-sales {
+        flex-direction: column;
+        align-items: center;
         width: 100%;
     }
 
-    
+    .component-text-header {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
 }
